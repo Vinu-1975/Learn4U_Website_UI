@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: 5px solid blueviolet;
+            background-color: rgb(138, 43, 226, 0.3);
+        }
+
+        /* #navigation::before {
+            content: "";
+            background-color: blueviolet;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        } */
+
+        .navigation ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center padding;
+
+        }
+
+        .navigation ul li {
+            padding: 20px;
+            /* background-color: blueviolet; */
+            border-radius: 30px;
+            list-style-type: none;
+            font-size: 1.3rem;
+            margin: 20px 10px;
+        }
+
+        .navigation ul li a {
+            color: blueviolet;
+            display: block;
+            background-color: white;
+            padding: 10px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-family: 'Bree Serif', serif;
+            transition: 0.5s;
+            letter-spacing: 2px;
+            box-shadow: 3px 3px 16px blueviolet;
+
+        }
+
+        .navigation ul li a:hover {
+            color: white;
+            /* background-color: white; */
+            background-color: blueviolet;
+            transform: scale(1.1);
+        }
+
+        .logo img {
+            cursor: pointer;
+            box-shadow: 2px 2px 2px blueviolet, -2px -2px 2px blueviolet;
+        }
+
+        #logo {
+            border-radius: 30px;
+            height: 100px;
+            width: 200px;
+            margin: 10px 10px;
+        }
+
+
+
+        #login {
+            margin-right: 30px;
+            padding: 15px;
+            margin: 8px 1px;
+            transform: translate(-20px, 20px);
+            background-color: blueviolet;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+
+
+        i {
+            color: white;
+        }
+
+        #login span {
+            color: white;
+            font-family: 'Bree Serif', serif;
+            font-size: 2em;
+        }
+
+        .dropdown {
+            position: relative;
+            /* left: -20px; */
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            left: -140px;
+            background-color: rgb(138, 43, 226);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .dropdown-content a:hover {
+            background-color: white;
+            color: blueviolet
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover #login {
+            background-color: rgb(138, 43, 226, 0.3);
+        }
+
+        .intro {
+            max-height: 30px;
+        }
+
+        #intro {
+            width: 100%;
+            height: 13%;
+        }
+
+        .quote {
+            font-family: 'Bree Serif', serif;
+            text-align: center;
+            background-color: blueviolet;
+            color: white;
+            border-bottom: 5px solid blueviolet;
+            letter-spacing: 3px;
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+            justify-items: flex-start;
+            align-items: center;
+
+        }
+
+        .gc {
+            padding: 10px;
+            border-radius: 20px;
+            border: 5px solid blueviolet;
+            margin: 50px auto;
+            max-height: 520px;
+            max-width: 280px;
+            background-color: rgb(138, 43, 226, 0.3);
+            transition: all 0.5s;
+            /* min-width: 300px; */
+        }
+
+
+
+        main .cards .gc:hover {
+            transform: scale(1.1);
+        }
+
+        .gc img {
+            height: 200px;
+            width: 230px;
+            border-radius: 30px;
+            margin: 10px;
+            box-shadow: 3px 3px 3px blueviolet;
+        }
+
+        .gc .content {
+            border: 2px solid rgb(128, 21, 235);
+            margin: 10px;
+            padding: 20px;
+            width: auto;
+            color: white;
+            background-color: blueviolet;
+            border-radius: 20px;
+            font-family: "Consolas", sans-serif;
+            overflow: hidden;
+        }
+
+        footer {
+            background-color: rgb(138, 43, 226, 0.3);
+            min-height: 200px;
+            border-top: 5px solid blueviolet;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .icons {
+            font-size: 2em;
+        }
+
+        footer span {
+            letter-spacing: 2px;
+            color: blueviolet
+        }
+
+        footer div {
+            margin: 10px 0px;
+            padding: 20px;
+        }
+
+        footer .middle ul {
+            list-style-type: none;
+            line-height: 50px;
+        }
+
+
+        footer span a {
+            text-decoration: none;
+            color: blueviolet;
+            transition: color 0.2s linear 0.1s;
+            border-bottom: 1px solid white;
+        }
+
+        footer span a:hover {
+            color: white;
+        }
+
+        footer .right ul {
+            list-style-type: none;
+            line-height: 50px;
+        }
+
+        footer i {
+            font-size: 1.5em;
+        }
+
+        footer h1 {
+            color: blueviolet;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .left {
+            padding: 30px;
+        }
+
+        #foot {
+            height: 300px;
+            width: 400px;
+            border-radius: 20px;
+            box-shadow: 3px 3px 4px blueviolet;
+            cursor: pointer;
+
+        }
+
+        /**/
+
+
+        #bbtn {
+            display: block;
+            margin: 20px auto;
+            font-size: 1.3em;
+            padding: 10px 30px;
+            border: none;
+            background-color: blueviolet;
+            cursor: pointer;
+            color: white;
+            font-family: 'Bree Serif', serif;
+            border-radius: 20px;
+            box-shadow: 1px 1px 1px rgb(138, 43, 226, 0.3),
+                /* 1px 2px 100px rgb(138, 43, 226, 0.3),
+                1px 3px 100px rgb(138, 43, 226, 0.3),
+                1px 4px 100px rgb(138, 43, 226, 0.3),
+                1px 5px 100px rgb(138, 43, 226, 0.3),
+                1px 6px 100px rgb(138, 43, 226, 0.3),
+                1px 7px 100px rgb(138, 43, 226, 0.3),
+                1px 8px 100px rgb(138, 43, 226, 0.3),
+                1px 9px 100px rgb(138, 43, 226, 0.3), */
+                1px 10px 1px rgb(145, 145, 145),
+                1px 18px 6px rgba(16, 16, 16, 0.4),
+                1px 22px 10px rgba(198, 196, 196, 0.2),
+                1px 25px 35px rgba(198, 196, 196, 0.2),
+                1px 30px 60px rgba(198, 196, 196, 0.2);
+
+        }
+
+        #bbtn:active {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation" id="navigation">
+        <div class="logo">
+            <img id="logo" src="/Images/logo11.jpg">
+        </div>
+        <ul>
+            <li><a href="/MAIN.html">Home</a></li>
+            <li><a href="/Courses.html">Courses</a></li>
+            <li><a href="/AboutUS.html">About</a></li>
+            <li><a href="/review.html">Review</a></li>
+        </ul>
+        <div class="dropdown">
+            <button id="login"><span><a href><i class="fa-solid fa-circle-user"></i></a></span></button>
+            <div class="dropdown-content">
+                <a href="/login.html">Log In</a>
+                <a href="/login.html">Sign Up</a>
+                <a href="feed.html">Log Out</a>
+            </div>
+        </div>
+        <!-- <div class="loginbtn">
+            <button id="login"><span></span></button>
+        </div> -->
+    </nav>
+    <div class="quote">
+        <h4>Learn Anytime,Anywhere and at your Pace</h4>
+    </div>
+    <main>
+        <!-- <div class="intro">
+            <img id="intro" src="/main.jpeg">
+        </div> -->
+        <div class="cards">
+            <div class="gc">
+                <img src="/Images/gc1.jpg">
+                <div class="content">
+                    <p><b>Free </b>courses like <br>python, web development, data science and ethical hacking
+                        are
+                        Available here!</p>
+                </div>
+                <button id="bbtn" onclick="window.open('/Programming/programming new page.html')">Programming</button>
+            </div>
+            <div class=" gc">
+                <img src="/Images/gc2.jpg">
+                <div class="content">
+                    <p><b>Free </b>courses like embedded c programming , aws certifications and many more
+                        Courses offered by eminent faculty.
+                    </p>
+                </div>
+                <button id="bbtn" onclick="window.open('/Software/soft new.html')">Software Dev.</button>
+            </div>
+            <div class="gc">
+                <img src="/Images/gc3.jpg">
+                <div class="content">
+                    <p><b>Free </b>courses like physical phyical fitness,training and <br>workouts
+                        ,swimming are Available here!</p>
+                </div>
+                <button id="bbtn" onclick="window.open('/indexphysicaleducation.html')">Physical
+                    Education</button>
+            </div>
+            <div class="gc">
+                <img src="/Images/gc4.jpg">
+                <div class="content">
+                    <p><b>Free </b>General Courses like English Literature,Mathematics,<br>Stock-Market and
+                        Communications
+                        are
+                        Available here!</p>
+                </div>
+                <button id="bbtn" onclick="window.location.href='/General-Courses.html'">General
+                    Courses</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="left">
+            <img id="foot" src="/Images/logo2.jpg">
+        </div>
+        <div class="middle">
+            <h1>Contact Us</h1><br>
+            <ul>
+                <li><i class="fa-solid fa-phone"></i><span>&nbsp;&nbsp;+91 7994377697</span></li>
+                <li><i class="fa-solid fa-envelope"></i><span>&nbsp;&nbsp;&nbsp;contactUS@learn4u.com</span></li>
+                <li><i class="fa-brands fa-whatsapp"></i><span>&nbsp;&nbsp;+91 9532660016</span></li>
+                <li><i class="fa-brands fa-github"></i><span>&nbsp;&nbsp;&nbsp;<a href="">Github</a></span></li>
+                <li><i class="fa-brands fa-linkedin"></i><span>&nbsp;&nbsp;&nbsp;<a href="">Linkedin</a></span></li>
+            </ul>
+        </div>
+        <div class="right">
+            <h1>Follow Us</h1><br>
+            <ul>
+                <li><i class="fa-brands fa-instagram"></i><span>&nbsp;&nbsp;<a href="">Instagram</a></span></li>
+                <li><i class="fa-brands fa-facebook"></i><span>&nbsp;&nbsp;<a href="">Facebook</a></span></li>
+                <li><i class="fa-brands fa-telegram"></i><span>&nbsp;&nbsp;<a href="">Telegram</a></span></li>
+                <li><i class="fa-brands fa-reddit"></i><span>&nbsp;&nbsp;<a href="">Reddit</a></span></li>
+                <li><i class="fa-brands fa-twitter"></i><span>&nbsp;&nbsp;<a href="">Twitter</a></span></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

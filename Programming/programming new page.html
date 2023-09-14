@@ -1,0 +1,315 @@
+<html>
+    <style>
+        .mega{
+            background-image: url("theme\ soft.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            bottom: 225px;
+            background-image:linear-gradient(to right,skyblue,white,pink);
+        }
+        .img
+        {
+            width: 100px;
+           height: 70px;
+            border-radius: 30px;
+            animation:fadeIn 8s;
+            margin-left:600px;
+         
+        }
+        .div1
+        {
+            background-color: red;
+            border-radius:250px;
+        }
+        .table1
+        {
+            width: 800px;
+            height: 150px;
+            margin-left: 100px;
+            border: 10px;
+            border-radius: 50px;
+            border-style: groove;
+            border-color: darkcyan ;
+        background-color: rgb(242, 55, 55);}
+            .td{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                position: relative;top: 10px;left: 30px; 
+                text-align: justify;
+
+            }
+            .butto{
+  margin-left:33%;
+  position:relative;
+  bottom: 250px;
+  height:80px;
+  border-radius: 50px;
+  border:none;
+  font-size: xx-large;
+  border-style: solid;
+  font-style: oblique;
+  font-weight: 600;
+  width:300px;
+  border-radius: 50px;
+  border:none;
+}
+.im{
+    margin-left:1050px;
+    position:relative;
+    bottom:150px;
+    height:150px;
+    width:420px;
+    border-radius: 100px;
+}
+.flip-img{
+    height:300px;
+    width:600px;
+   
+}
+.flip-box {
+ background-image: url("https://themepack.me/i/c/749x468/media/g/127/holiday-lights-theme-11.jpg");
+  width: 600px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin-left: 50%;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(-180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: rgb(61, 14, 157);
+  color: black;
+}
+
+.flip-box-back {
+  background-color: rgb(12, 15, 16);
+  color: white;
+  transform: rotateX(-180deg);
+}
+.view{  
+  font-size: x-large;
+  border-style: solid;
+  font-style: oblique;
+  font-weight: 500;
+  width:200px;
+  border-radius: 40px;
+  border:none;
+  background-color: whitesmoke;
+  margin-left: 10%;
+  position: relative;
+  top: 250px;
+}
+
+.satya{
+
+  position: absolute;
+  bottom: 1650px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+  margin-left: 5%;
+   
+}
+.abhi{
+  font-size: large;
+  color: brown;
+}
+
+
+
+        </style>
+        <script>
+            function foo()
+            {
+                document.getElementById('v1').style.opacity=0.3;
+                document.getElementById('bu1').style.backgroundColor="tan"
+
+            }
+            function foo2()
+            {
+                document.getElementById('v1').style.opacity=1;
+                document.getElementById('bu1').style.backgroundColor="white"
+            }
+            function foo3()
+            {
+                document.getElementById('123').style.display="block";
+            }
+            function foo4()
+            {
+                window.open("https://www.youtube.com/watch?v=s2mavmg80ro")
+            }
+            function foo5()
+            {
+              window.open("https://www.programiz.com/python-programming")
+            }
+            function foo6()
+            {
+              window.open("https://www.youtube.com/watch?v=7mdEvKyLoYM")
+            }
+            function foo7()
+            {
+              window.open("https://www.edureka.co/blog/ethical-hacking-tutorial/")
+            }
+
+
+        </script>
+    </style>
+   
+    <video autoplay style="width:100%" id="v1">
+        <source src="web-development-promo-animation-video-2022_aCtxtZU9.mp4" type="video/mp4" autoplay>
+    </video> 
+    <img src="logo.jpeg" class="im">
+    <button type="submit" class="butto" id="bu1" onmouseover="foo()" onmouseout="foo2()" onclick="foo3()">Explore More</button>
+        </div>
+        <body>
+        <div class="mega">
+        <div id="123" style="display:none;">
+          <h1 style="position:center;"> PROGRAMMING AND WEB DEVELOPMENT   </h1>
+          
+        <br><div style="font-size: 25px;">
+            <i>The courses provide by our website are recognised internationally</i>
+            <ul>
+                <li>Job Ready-courses</li>
+                <li>Future proof</li>
+                <li>Lot's of challenges and mini-projects</li>
+            </ul>
+        </div>
+        <div>
+       
+            <h1 class = "satya" style="position: absolute;
+            bottom: 2100px;">Walkthrough of Data Science</h1>
+            <div align="left">
+            <h4 style="position:relative;
+            top: 150px;
+            margin-left: 5% ;
+            margin-top: 10%;"
+             class="abhi" >4.1  Rating average based on 254 reviews
+              <br>1,13,222 Views</h4>
+            <button type="submit" onclick="foo4()"style="position:relative;
+            top: 170px; margin-left: 10%" class="view">View Course</button>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src=" https://imageio.forbes.com/specials-images/imageserve/615a844b0e678d9d11c5fc26/The-5-Biggest-Data-Science-Trends-In-2022/960x0.jpg?format=jpg&width=960 " class="flip-img">
+
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Description</h2>
+                    <p>Artificial Intelligence and Data Science go hand in hand. People aspiring to become a data scientist , this course provides a great overview for the
+                      beginners.<br>
+                      Data science is a "concept to unify statistics, data analysis, informatics, and their related methods" in order to "understand and analyse actual phenomena" with data.</p>
+          
+                  </div>
+                </div>
+              </div>
+            <h1  class="satya" style=" 
+            position: absolute;
+            bottom: 1550px;">Basics of Python</h1>
+            <h4 style="position:relative;
+            top: 150px;
+            margin-left: 5% ;
+            margin-top: 10%;"
+             class="abhi" >4.6 Rating average based on 332 reviews
+             <br> 1,21,110 Views</h4>
+            <button type="submit" onclick="foo5()"style="position:relative;
+            top: 180px; margin-left: 10%" class="view">View Course</button>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="https://catalog-manager.obs.cn-north-1.myhwclouds.com/readonly/6f56b4ec50ba11ebadf8fa163e8e7caa_Python.jpg?hl=en_US" class="flip-img">
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Description</h2>
+                    <p>Believed to be the future of programming languages, the demand for python coders is rising exponentially. 
+                      <br>Python is now the programming language of the future and main use is for designing the backend of any website<br>For Beginners, this is the perfect course for you to gear up with python
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <h1 class="satya" style=" 
+              position: absolute;
+              bottom: 1000px;"> Html from beginner to expert</h1>
+             <h4 style="position:relative;
+             top: 150px;
+             margin-left: 5% ;
+             margin-top: 10%;"
+              class="abhi" >4.3 Rating average based on 512 reviews
+              <br> 1,10,999 Views</h4>
+             <button type="submit" onclick="foo6()"style="position:relative;
+             top: 180px; margin-left: 10%" class="view">View Course</button>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="https://qph.fs.quoracdn.net/main-qimg-9c0afc0aed8c540ed061e6b3e6f6fff7-lq" class="flip-img">
+                  </div>
+                  <div class="flip-box-back" >
+                    <h2>Description</h2>
+                    <p>Even in 2022, HTML 5 is not losing its superiority in web development. For those aspiring to be web devs this is the right course for you guys as it provides you complete info on 
+                      HTML 5 and has lot of practice problems for you.</p>
+                  </div>
+                </div>
+              </div>
+                <h1 class="satya" style=" 
+                position: absolute;
+                bottom: 450px;"> Ethical hacking : Beginners guide</h1>
+                <h4 style="position:relative;
+                top: 150px;
+                margin-left: 5% ;
+                margin-top: 10%;"
+                 class="abhi" >4.2 Rating average based on 482 reviews
+                 <br> 1,22,666 Views</h4>
+                <button type="submit" onclick="foo7()"style="position:relative;
+                top: 180px; margin-left: 10%" class="view">View Course</button>
+                <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="https://images.techopedia.com/images/uploads/dreamstime_m_123641233.jpg" class="flip-img">
+                    </div>
+                    <div class="flip-box-back">
+                      <h2>Description</h2>
+                      <p>Nowadays, hacking isn't that difficult and is also considered to be an important skill which the recruiting company needs from you. This course is for those
+                        people who are reallly interested in becoming a ethical hacker.
+                    </p>
+                </div>
+              </div>
+            </div>
+            </div>
+            <br>
+            <br>
+            <div>
+              <h2> Links for courses from other websites</h2>
+              <br>
+              <a href="https://www.upgrad.com/full-stack-development-bootcamp/?utm_source=GOOGLE&utm_medium=NBSEARCH&utm_campaign=IND_ACQ_WEB_GOOGLE_NBSEARCH_BU_UPG_BCFS_HIT_T2&utm_content=Bootcamp_Engineering_PM&utm_term=software%20programming%20courses&gclid=EAIaIQobChMI9LK4jLKk9wI
+              VBSQrCh3lPA8fEAAYASAAEgLJAPD_BwE">Java Course on Full Stack Development</a>
+              <br>
+              <br><a href="https://www.classcentral.com/course/udacity-ai-fundamentals-59066?utm_source=fcc_medium&utm_medium=web&utm_campaign=cs_
+              programming_january_2022">AI Fundamentals by Microsoft</a><br>
+              <br><a href="https://www.udemy.com/course/web-developer-course-on-creating-a-business-website/"> Applying HTML,CSS and JS</a>
+              <br>
+          </div>
+
+        
+        </body>
+
+        </html>

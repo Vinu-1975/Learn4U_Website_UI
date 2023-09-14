@@ -1,0 +1,60 @@
+
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center;
+            font-size: 60;
+            background-color: aqua; 
+            border-style: double;
+        
+        }
+        body {
+            background-image:linear-gradient(to right,green,white);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+       img
+        {
+            width: 100px;
+            height: 70px;
+            border-radius: 30px;
+         
+        }
+        .table1
+        {
+            width: 600px;
+            height: 100px;
+            margin-left: 100px;
+            border: 10px;
+            border-radius: 50px;
+            border-style: groove;
+            border-color: darkcyan ;
+            background-image: url(https://th.bing.com/th/id/OIP.S6ZroFDuRoceN6h6aSam6AHaEo?w=272&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7);
+
+        }
+        .table2
+        {
+            width: 600px;
+            height: 100px;
+            margin-left: 400px;
+            border: 10px;
+            border-radius: 50px;
+            border-style: groove;
+            border-color: darkcyan ;
+            background-image: url(https://th.bing.com/th/id/OIP.S6ZroFDuRoceN6h6aSam6AHaEo?w=272&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7);
+       
+        }
+        .table3  {
+
+            width: 600px;
+            height: 300px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: larger;
+            margin-left: 50px;
+        }
+        .text
+        {
+           font-size: larger; 
+        }

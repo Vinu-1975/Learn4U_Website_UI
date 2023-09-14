@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Sign Up</title>
+</head>
+
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <div class="signup">
+            <form name="form2" onsubmit="return validate()">
+                <label for="chk">Sign up</label>
+                <input type="text" name="txt" placeholder="User Name" required>
+                <input type="text" name="email" placeholder="Email" required>
+                <input type="password" name="pswd" placeholder="Password" required>
+                <input type="password" name="pswd2" placeholder="Confirm Password" required>
+                <button>Sign up</button>
+                <label for="chk" style="text-decoration:underline">Login?</label>
+            </form>
+        </div>
+        <div class="login">
+            <form name="myform" onsubmit="loginFunction()" autocomplete="off">
+                <label for="chk">Login</label>
+                <input type="text" name="email" id="usn" placeholder="UserName" required>
+                <input type="password" name="pwd" id="pd" placeholder="password" required>
+                <button type="submit" id="pro">Login</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function loginFunction() {
+            var user = ["vignesh", "admin", "vinayakan", "abhi", "sagi", "satya"];
+            var pwd = ["vignesh", "admin", "vinayakan", "abhi", "sagi", "satya"];
+            let flag = 0, flag1 = 0, flag2 = 0;
+            let index;
+            let i;
+            var username = document.myform.usn.value;
+            var password = document.myform.pd.value;
+
+            for (i = 0; i < user.length; i++) {
+                if (username == user[i]) {
+                    flag = 0;
+                    flag1 = 1;
+                    index = i;
+                    break;
+                }
+            }
+            if (flag1 == 0) {
+                alert("Invalid credentials");
+                flag = 1;
+            }
+            if (flag1 == 1) {
+                if (password == pwd[index]) {
+                    flag2 = 1;
+                }
+                if (flag2 == 0) {
+                    alert("Enter valid password");
+                    flag = 1;
+                }
+            }
+            if (flag == 0) {
+                window.open("MAIN.html");
+            }
+
+        }
+        function validate() {
+            var user = document.form2.email.value;
+            var pcode = document.form2.pswd.value;
+            if (user.includes("@") && user.includes(".com")) {
+                if (pcode.length >= 6 && pcode == document.form2.pswd2.value) {
+                    window.open('index.html');
+                    return true;
+                }
+                else {
+                    alert("Password is invalid");
+                    return false;
+                }
+            }
+            else {
+                alert("Enter Valid email")
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

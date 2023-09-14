@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Courses</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+
+        * {
+            padding: 0px;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: pink;
+        }
+
+        .patterns {
+            height: 30vh;
+        }
+
+        svg text {
+            font-family: Lora;
+            letter-spacing: 10px;
+            stroke: darkorchid;
+            font-size: 50px;
+            font-weight: 700;
+            stroke-width: 3;
+
+            animation: textAnimate 5s infinite alternate;
+        }
+
+        @keyframes textAnimate {
+            0% {
+                stroke-dasharray: 0 50%;
+                stroke-dashoffset: 20%;
+                fill: blueviolet
+            }
+
+            100% {
+                stroke-dasharray: 50% 0;
+                stroke-dashoffstet: -20%;
+                fill: violet
+            }
+
+        }
+
+        nav {
+            position: relative;
+            top: -20px;
+            background-color: peachpuff;
+            z-index: 1;
+            border: 5px solid white;
+            box-shadow: 3px 4px 15px black, -3px -4px 15px black;
+            /* padding: 20px 20px; */
+        }
+
+        nav ul {
+            display: flex;
+            flex-flow: row wrap;
+            list-style-type: none;
+            justify-content: center;
+        }
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            text-align: center;
+            width: 200px;
+            margin: 0px 10px;
+            padding: 20px 10px;
+            background-color: blueviolet;
+            border-radius: 10px;
+            transition: 0.5s;
+            font-family: 'Bree Serif', serif;
+        }
+
+        nav ul li a:hover {
+            color: blueviolet;
+            background-color: white;
+        }
+
+
+        main {
+            position: relative;
+            top: -20px;
+        }
+
+        .eng {
+
+            background-image: url("Images/Eng-Lit.jpg");
+            background-size: 100% 100%;
+            min-height: 500px;
+        }
+
+        .mat {
+
+            background-image: url("Images/mat.jpg");
+            background-size: 100% 100%;
+            min-height: 500px;
+        }
+
+        .sto {
+
+            background-image: url("Images/sto.jpg");
+            background-size: 100% 100%;
+            min-height: 500px;
+        }
+
+        .com {
+
+            background-image: url("Images/com.jpg");
+            background-size: 100% 100%;
+            min-height: 500px;
+        }
+
+        .eng h1 {
+            transform: translate(800px, 100px);
+            font-size: 40px;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .mat h1 {
+            transform: translate(130px, 100px);
+            font-size: 40px;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .sto h1 {
+            transform: translate(800px, 100px);
+            font-size: 40px;
+            font-family: 'Bree Serif', serif;
+            color: white;
+        }
+
+        .com h1 {
+            transform: translate(200px, 110px);
+            font-size: 40px;
+            font-family: 'Bree Serif', serif;
+        }
+
+        .eng a {
+            display: block;
+            width: 200px;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px;
+            border: 2px soild black;
+            color: black;
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5em;
+            transform: translate(870px, 200px);
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .mat a {
+            display: block;
+            width: 200px;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px;
+            border: 2px soild black;
+            color: black;
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5em;
+            transform: translate(150px, 200px);
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .sto a {
+            display: block;
+            width: 200px;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px;
+            border: 2px soild black;
+            color: black;
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5em;
+            transform: translate(830px, 150px);
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .com a {
+            display: block;
+            width: 200px;
+            text-align: center;
+            text-decoration: none;
+            padding: 20px;
+            border: 2px soild black;
+            color: white;
+            font-family: 'Bree Serif', serif;
+            font-size: 1.5em;
+            transform: translate(247px, 180px);
+            background-color: black;
+            border-radius: 5px;
+        }
+
+        .einfo {
+            margin: 5px;
+            width: 250px;
+            height: 100px;
+            border: 2px solid white;
+            border-radius: 10px;
+            transform: translate(850px, 150px);
+            color: black;
+            font-family: 'Bree Serif', serif;
+            letter-spacing: 3px;
+            padding: 10px;
+        }
+
+        .minfo {
+            margin: 5px;
+            width: 250px;
+            height: 100px;
+            border: 2px solid white;
+            border-radius: 10px;
+            transform: translate(115px, 150px);
+            color: black;
+            background-color: whitesmoke;
+            font-family: 'Bree Serif', serif;
+            letter-spacing: 3px;
+            padding: 10px;
+        }
+
+        .sinfo {
+            margin: 5px;
+            width: 250px;
+            height: 180px;
+            border: 2px solid white;
+            transform: translate(800px, 120px);
+            border-radius: 10px;
+            color: white;
+            font-family: 'Bree Serif', serif;
+            letter-spacing: 3px;
+            padding: 10px;
+        }
+
+        .cinfo {
+            margin: 5px;
+            width: 250px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 10px;
+            transform: translate(215px, 150px);
+            color: black;
+            font-family: 'Bree Serif', serif;
+            letter-spacing: 3px;
+            padding: 10px;
+        }
+
+        .shine span {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="patterns">
+            <svg width="100%" height="100%">
+                <!-- <defs>
+                    <pattern id="dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+                        <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+                    </pattern>
+                </defs> -->
+                <rect x="0" y="0" width="100%" height="100%" fill="url(#dots)"></rect>
+                <text x="50%" y="52%" text-anchor="middle">
+                    GENERAL COURSES
+                </text>
+            </svg>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/MAIN.html">Home</a></li>
+            <li><a href="/General Courses/English-Literature1.html">Literature</a></li>
+            <li><a href="/General Courses/Mathematics.html">Mathematics</a></li>
+            <li><a href="/General Courses/Stock-Market.html">Stock-Market</a></li>
+            <li><a href="/General Courses/Communication.html">Communication</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="eng">
+            <h1 class="shine">English-Literature</h1>
+            <div class="einfo">
+                <p>Improve Your English from top Mentors.</p>
+            </div>
+            <a href="/General Courses/English-Literature1.html">Get Now</a>
+        </div>
+        <div class="mat">
+            <h1 class="shine">Mathematics</h1>
+            <div class="minfo">
+                <p>Become a Pro at Mathematics.</p>
+            </div>
+            <a href="/General Courses/Mathematics.html">Get Now</a>
+        </div>
+        <div class="sto">
+            <h1 class="shine">Stock-Market</h1>
+            <div class="sinfo">
+                <p>The stock market is filled with individuals who know the price of everything , but the value of
+                    nothing.So Learn Now.</p>
+            </div>
+            <a href="/General Courses/Stock-Market.html">Get Now</a>
+        </div>
+        <div class="com">
+            <h1 class="shine"><span>Co</span>mmunication</h1>
+            <div class="cinfo">
+                <p>Lack of Communication ruins everything.</p>
+            </div>
+            <a href="/General Courses/Communication.html">Get Now</a>
+        </div>
+    </main>
+</body>
+
+</html>

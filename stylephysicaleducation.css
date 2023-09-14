@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;1,100&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --redclr:#F92524;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+h1{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px skyblue;
+}
+header{
+    border-radius: 30px;
+    background-image: url("https://media.istockphoto.com/photos/plain-grunge-background-in-dark-and-light-gray-picture-id655721656");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1%;
+}
+.container{
+    position: relative;
+}
+.container img{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: -2rem;
+    z-index: -1;
+  
+}
+.header{
+    padding: 2rem 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    background: white;
+    z-index: 1000000;
+}
+#logo{
+    color: var(--redclr);
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.container2
+            {
+                border: 2px solid black;
+                border-radius: 25px;
+                padding: 25px;
+                width: 50%;
+        
+                margin-top: 3%;
+                margin-left: 0%;
+                background-image: linear-gradient(lightgreen,deeppink);
+
+            }
+            input[type=submit]
+            {
+                width: 25%;
+                height: 5%;
+                background-image: linear-gradient(violet,lightblue);
+            }
+            input[type=reset]
+            {
+                width: 25%;
+                height: 5%;
+                background-image: linear-gradient(lightgreen,deeppink);
+            }
+body{
+	font-family: arial;
+}
+.navbar a{
+    margin-left: 1.5rem;
+    color: black;
+    font-size: 1.5rem;
+   position: relative;
+}
+.navbar a:hover:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--redclr);
+  width: 100%;
+  height: 3px;
+  margin-top: 5px;
+}
+.navbar a:hover{
+    color: var(--redclr);
+}
+.icons div{
+margin-left: 1rem;
+color: black;
+font-size: 2rem;
+cursor: pointer;
+}
+.icons div:hover{
+    color: var(--redclr);
+}
+#menu-bar{
+    display: none;
+}
+.user-login{
+    width: 30rem;
+    position: absolute;
+    top: 100%;
+    right: -100rem;
+    height: 20rem;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-login input{
+    padding: 1rem 2rem;
+    margin: .5rem;
+    border-radius: 15px;
+    border: 1px solid var(--redclr);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navbar.active{
+    left: 0;
+}
+.user-login.active{
+    right: 2rem;
+}
+
+.home{
+    padding: 2rem 7%;
+}
+.main-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-home{
+    flex: 1 1 45rem;
+}
+
+.inner-home img{
+    width: 100%;
+}
+.home-content h2{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.home-content h1{
+    font-size: 35px;
+}
+.home-content h1 span{
+    color: var(--redclr);
+    margin: 1rem 0;
+}
+.home-content p{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.home-content a{
+    padding: 1.5rem 3rem;
+    background: var(--redclr);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+.our-class{
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 4rem 7%;
+  
+}
+.our-class h1{
+    font-size: 40px;
+    color: var(--redclr);
+    text-align: center;
+    margin-bottom: 25px;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-slide{
+    position: relative;
+}
+.swiper-slide:hover{
+    transform: translateY(-20px);
+}
+.swiper-slide h2{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: var(--redclr);
+    width: 100%;
+    padding: 1.5rem 0;
+    font-size: 20px;
+    text-align: center;
+}
+.our-story{
+    padding: 3rem 7%;
+    background: url(images/storybackground.png);
+    width: 100%;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.our-story h1{
+    color: var(--redclr);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.ourstory-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ourstory-inner{
+    flex: 1 1 45rem;
+}
+.ourstory-inner .story-front{
+width: 100%;
+}
+.ourstory-inner h2{
+    color: var(--redclr);
+    font-size: 2rem;
+}
+.icons-content{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+}
+.icons-content img{
+    width: 80px;
+}
+.icons-content p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.top-story-content{
+    padding: 2rem .5rem;
+}
+.top-story-content p{
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+}
+.story-content{
+    margin-left: 20px;
+}
+.our-trainers{
+    padding: 3rem 7%;
+}
+.our-trainers h1{
+    color: var(--redclr);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main-trainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:0;
+}
+.inner-trainer{
+    flex:1 1 300px;
+   height: 400px;
+  
+}
+.inner-trainer img{
+    width: 100%;
+    height: 300px;
+    transform: scale(1);
+}
+.inner-trainer img:hover{
+    transform: translateY(-20px);
+}
+.trainer-content{
+    padding: 0 2rem;
+}
+.trainer-content h2{
+    color: var(--redclr);
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.trainer-content span{
+color: black;
+font-size: 1.5rem;
+padding: 15px 0;
+}
+.trainer-content hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.trainer-content p{
+    font-size: 1.5rem;
+}
+.social-icons i{
+font-size: 2rem;
+color: black;
+padding: 1rem;
+margin: 1rem;
+}
+.social-icons i:hover{
+    color: var(--redclr);
+    cursor: pointer;
+    transform: rotate(360deg) scale(2);
+    
+}
+
+.customer-review{
+    padding: 5rem 7%;
+    height:500px
+}
+.customer-review h1{
+    color: var(--redclr);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    height:500px
+}
+.main-customer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.inner-customer{
+    flex: 1 1 300px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 3rem 1rem;
+    position: relative;
+}
+.inner-customer:hover{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.inner-customer img{
+position: absolute;
+top: -15%;
+width: 70px;
+}
+.review-icons{
+    padding: 1rem 0;
+    margin-top: 15px;
+}
+.review-icons i{
+    color: yellow;
+    font-size: 18px;
+}
+.inner-customer p{
+    font-size: 1.5rem;
+    padding: 1.5rem .5rem;
+}
+.rew{
+    position: relative;
+    left: 170px;
+    position: relative;
+    top: 100px;
+    
+    border-radius: 40px;
+    height: 100px;
+    width: 40px;
+
+}
+@media (max-width:991px) {
+    .home{
+        margin-top: 70px;
+    }
+}
+
+
+@media (max-width:767px) {
+    html{
+        font-size: 50%;
+    }
+    .header{
+        padding: 2rem;
+    }
+    #menu-bar{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        width: 30rem;
+        height: 100vh;
+        left: -100%;
+        background: white;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    .home{
+        margin-top: 70px;
+    }
+    .story-content h2{
+        color: black;
+    }
+.top-story-content p{
+    padding: 0 2rem;
+}
+.inner-customer{
+    margin-top: 15px;
+    padding: 4rem 4rem;
+}
+}

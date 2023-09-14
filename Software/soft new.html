@@ -1,0 +1,232 @@
+<html>
+    <style>
+        .mega{
+            background-image: url("theme\ soft.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            bottom: 225px;
+            background-image:linear-gradient(to right,#81a7cd,#e6a3ae);
+        }
+        .img
+        {
+            width: 100px;
+           height: 70px;
+            border-radius: 30px;
+            animation:fadeIn 8s;
+            margin-left:600px;
+         
+        }
+        .div1
+        {
+            background-color: red;
+            border-radius:250px;
+        }
+        .table1
+        {
+            width: 800px;
+            height: 150px;
+            margin-left: 100px;
+            border: 10px;
+            border-radius: 50px;
+            border-style: groove;
+            border-color: darkcyan ;
+        background-color: rgb(242, 55, 55);}
+            .td{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                position: relative;top: 10px;left: 30px; 
+                text-align: justify;
+
+            }
+            .butto{
+  margin-left:33%;
+  position:relative;
+  bottom: 250px;
+  height:80px;
+  border-radius: 50px;
+  border:none;
+  font-size: xx-large;
+  border-style: solid;
+  font-style: oblique;
+  font-weight: 600;
+  width:300px;
+  border-radius: 50px;
+  border:none;
+}
+.im{
+    margin-left:1100px;
+    position:relative;
+    bottom:150px;
+    height:150px;
+    width:420px;
+    border-radius: 100px;
+}
+.flip-img{
+    height:300px;
+    width:600px;
+   
+}
+.flip-box {
+  background-image: url("https://themepack.me/i/c/749x468/media/g/127/holiday-lights-theme-11.jpg");
+  background-color: transparent;
+  width: 600px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  margin-left: 50%;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(-180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: rgb(12, 12, 12);
+  color: white;
+  transform: rotateY(-180deg);
+ 
+}
+.view{  
+  font-size: xx-large;
+  border-style: solid;
+  font-style: oblique;
+  font-weight: 600;
+  width:300px;
+  border-radius: 50px;
+  border:none;
+  background-color: cadetblue;
+  margin-left: 10%;
+  position: relative;
+  top: 250px;
+
+}
+h3{
+  font-size: xx-large;
+  font-style: inherit;
+  font-weight: 700;
+  margin-left: 10%;
+  position: relative;
+  top: 150px;
+ 
+  color: rgb(249, 12, 12);
+}
+h4{
+  font-size: large;
+  font-style: inherit;
+  font-weight: 300;
+  margin-left: 10%;
+  position: relative;
+  top: 150px;
+ 
+  
+}
+
+        </style>
+        <script>
+            function foo()
+            {
+                document.getElementById('v1').style.opacity=0.3;
+                document.getElementById('bu1').style.backgroundColor="tan"
+
+            }
+            function foo2()
+            {
+                document.getElementById('v1').style.opacity=1;
+                document.getElementById('bu1').style.backgroundColor="white"
+            }
+            function foo3()
+            {
+                document.getElementById('123').style.display="block";
+            }
+            function foo4()
+            {
+                window.open("https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=&cad=rja&uact=8&ved=2ahUKEwjCqdzN_c_4AhWD7nMBHQzYCjYQtwJ6BAgQEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DVM7s1k0s7kk&usg=AOvVaw0RdZZkLjpZUmNycyvBF7sd")
+            }
+
+        </script>
+    </style>
+    <video autoplay style="width:100%" id="v1">
+        <source src="software-development-promo-video_6hsVQQYV.mp4" type="video/mp4" >
+    </video><br>
+    <img src="logo.jpeg" class="im">
+    <button type="submit" class="butto" id="bu1" onmouseover="foo()" onmouseout="foo2()" onclick="foo3()">Explore More</button>
+        </div>
+        <div class="mega">
+        <div id="123" style="display:none;">
+        <div style="color: white;font-weight: 300;font-style: italic;font-size: larger; margin-left: 10%;right: 10%;position: relative;top: 100px;">
+            Software developers play a key role in major MNC'S such as TCS , CTS , Accenture etc.. By 2030 , the world is gonna get bombarded with software devs.
+            So to stand out and show your skills , have a look at some of our courses which will help you to boost your skills.
+        </div>
+       
+            <h3>Embedded C programming</h3>
+            <div align="left">
+            <h4>Number of students enrolled: 1,00,000</h4>
+            <button type="submit" onclick="foo4()" class="view">View Course</button>
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="https://www.elprocus.com/wp-content/uploads/Embedded-C-Programming-1-300x189.jpg" class="flip-img">
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Description</h2>
+                    <p>This course not only takes your coding skills to the next level but also your level of understanding of C language.
+            Most of the modern operating systems and othercomputer peripherals are encoded on C.</p>
+                  </div>
+                </div>
+              </div></div>
+            <h3>.NET Fundamentals</h3>
+            <h4>Number of students enrolled: 1,00,000</h4>
+            <button type="submit" onclick="foo4()" class="view">View Course</button>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9sr0HOrj7TbXqDO3iY7SS1Q6ESZ6fNlxxT9sUwdddS8njzhKLOrRnuRXceUxsjzEc_Ck&usqp=CAU" class="flip-img">
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Description</h2>
+                    <p>One of the greatest findings of Microsoft. The .NET not only serves as a platform.For building large 
+                        softwares, but also helps in making web based forms and applications and also is dificult to break through.</p>
+                  </div>
+                </div>
+              </div>
+              <h3>AWS Certification</h3>
+              <h4>Number of students enrolled: 1,00,000</h4>
+              <button type="submit" onclick="foo4()" class="view">View Course</button>
+              <div class="flip-box">
+                <div class="flip-box-inner">
+                  <div class="flip-box-front">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Vt1rdyw4FPgjpm0j86zbXgQm7-dl3GiYtg&usqp=CAU" class="flip-img">
+                  </div>
+                  <div class="flip-box-back">
+                    <h2>Description</h2>
+                    <p>Now most of the websites are configured only on AWS. Facebbok,twitter,Instagram etc. are all based on AWS. So it would be highly benefecial
+                        if you register for this course.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </html>

@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        input {
+            margin-left: 4%;
+        }
+
+        .botton {
+            margin-left: 20%;
+            width: 200px;
+            height: 40px;
+            background-color: lightseagreen;
+            border-radius: 40px;
+
+            border-width: 5px;
+
+        }
+    </style>
+
+</head>
+<title>PHYSICAL FITNESS</title>
+<div>
+    <form action="registered.html" method="post">
+        <label for="fname">First Name :</label>
+        <div>
+            <input type="text" id="fname" name="fname" style="border-radius: 20px;">
+        </div><br>
+        <br><LABEL for="lname">Last Name :</LABEL>
+        <div>
+            <input type="text" name="lname" id="lname">
+        </div><br>
+        <br><label for="age">Age :</label>
+        <div>
+            <input type="number" id="age" name="age">
+        </div><br>
+        <br><label for="email">Email Address:</label>
+        <div>
+            <input type="email" id="email" name="email">
+        </div><br>
+        <br><label for="contact">Contact No :</label>
+        <div>
+            <br>
+            <input type="number" id="contact" name="contact">
+        </div><br>
+        <br><label for="course">Choose a course :</label>
+        <select id="course">
+            <option value="Fitness tips and workout routines" name="Fitness tips and workout routines">Fitness tips and
+                workout routines</option>
+            <option value="Healthy living" name="Healthy living">Healthy living</option>
+            <option value="Yoga exercises" name="Yoga exercises">Yoga exercises</option>
+            <option value="Weight loss" name="Weight loss">Weight loss</option>
+            <option value="15 min workout dialy" name="15 min workout dialy">15 min workout dialy</option>
+            <option value="Coaching styles" name="Coaching styles">Coaching styles and Techniques</option>
+            <option value="Others" name="Other">Others</option>
+        </select>
+        <br><br><br>
+        <label for="info">How did you get to know about our website</label><br><br>
+        <input type="radio" name="reach" value="newspaper"> Newspaper
+        <input type="radio" name="reach" value="ytads">YouTube Ads
+        <input type="radio" name="reach" value="tv">TV
+        <input type="radio" name="reach" value="Others">Others
+        <br><br><br>
+        <input type="submit" value="Submit" class="botton">
+    </form>
+</div>
+
+</html>

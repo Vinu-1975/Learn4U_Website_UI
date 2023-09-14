@@ -1,0 +1,91 @@
+header {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz3bOihZhLPDv6fx7IB-j3OBFQy5J4B0ag6Q&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+h1 {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    font-size: 40px;
+}
+
+div {
+    border-radius: 30px;
+}
+
+div span {
+    background-color: grey;
+    border-radius: 20px;
+}
+
+.one {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLiNC0W3_I8f7jRK91yJpN9x-QL8nrRcxscQ&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.two {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLiNC0W3_I8f7jRK91yJpN9x-QL8nrRcxscQ&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+span a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.foot {
+    margin: 1%;
+}
+
+footer {
+    border-radius: 30px;
+}
+
+div span:hover {
+    background-color: black;
+}
+
+nav {
+    background-image: linear-gradient(to right, darkblue, white);
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+nav a {
+    float: left;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+nav a:hover {
+    background-color: black;
+    background-image: linear-gradient(135deg, white, rgb(132, 71, 184));
+}
+
+.img {
+    border-radius: 30px;
+    margin-bottom: 1%;
+}
+
+footer {
+    border-radius: 30px;
+    background-image: linear-gradient(135deg, white, violet, skyblue);
+}
+
+footer a {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer a:hover {
+    background-color: greenyellow;
+}
