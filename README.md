@@ -1,6 +1,9 @@
 # Learn4U - Online Learning Platform
 
-Welcome to **Learn4U**! An online learning platform meticulously crafted by a team of 4 during our first year. With its visually appealing blue-violet theme and seamless animations, Learn4U promises a delightful e-learning experience.
+Welcome to **Learn4U**! An online learning platform meticulously crafted by a team of 4 during our first year. Experience the platform yourself: [Live Demo](https://vinu-1975.github.io/Learn4U_Website_UI/index.html)
+
+With its visually appealing blue-violet theme and seamless animations, Learn4U promises a delightful e-learning experience.
+
 
 ## 🎓 Courses Offered
 
